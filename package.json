@@ -1,0 +1,40 @@
+{
+  "name": "@datatr-ux/ods-tailwind-config",
+  "version": "1.0.0",
+  "description": "Export a Tailwind config based on ODS",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./style.css": "./dist/style.css",
+    "./tailwind.config": "./dist/tailwind.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ovhcloud/ods-themes": "^18.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "postcss-import": "^16.1.0",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tailwindcss -i ./style.css -o ./dist/style.css && tsc",
+    "test": "echo \"No tests yet\" && exit 0",
+    "prepare": "npm run build",
+    "clean": "rm -rf dist",
+    "start": "npm run dev"
+  }
+}

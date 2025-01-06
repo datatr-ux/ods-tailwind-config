@@ -1,0 +1,4 @@
+@import 'ods.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

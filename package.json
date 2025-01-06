@@ -1,6 +1,6 @@
 {
   "name": "@datatr-ux/ods-tailwind-config",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Export a Tailwind config based on ODS",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",

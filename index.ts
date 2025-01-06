@@ -10,9 +10,10 @@ const myTailwindPlugin = plugin.withOptions(
       addBase({
         body: {
           fontFamily: 'var(--ods-font-family-default)',
+          color: 'var(--ods-color-text)',
         },
         'h1, h2, h3, h4, h5, h6': {
-          color: theme('colors.heading'),
+          color: 'var(--ods-color-heading)',
         },
         h1: {
           fontSize: theme('fontSize.4xl'),
